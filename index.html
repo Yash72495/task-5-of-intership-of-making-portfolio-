@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Maind - BCA Student Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="carousel-container">
+                <div class="carousel" id="project-carousel">
+                    <div class="carousel-slide active">
+                        <div class="project-card">
+                            <h3>Weather App</h3>
+                            <p>A responsive weather application that fetches real-time data using a public API. Built with HTML, CSS, and JavaScript.</p>
+                            <img src="https://via.placeholder.com/400x250?text=Weather+App" alt="Weather App">
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="project-card">
+                            <h3>To-Do List App</h3>
+                            <p>An interactive to-do list with add, edit, delete, and local storage persistence. Focuses on user-friendly JavaScript functionality.</p>
+                            <img src="https://via.placeholder.com/400x250?text=To-Do+List" alt="To-Do List">
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="project-card">
+                            <h3>Contact Form Project</h3>
+                            <p>A dynamic contact form with validation and submission handling. Demonstrates form processing in Vanilla JS.</p>
+                            <img src="https://via.placeholder.com/400x250?text=Contact+Form" alt="Contact Form">
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn prev" id="prev-btn">❮</button>
+                <button class="carousel-btn next" id="next-btn">❯</button>
+                <div class="carousel-dots" id="carousel-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Yash Maind</h1>
+            <nav class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle">🌙</button>
+            <button class="mobile-menu-toggle" id="mobile-toggle">☰</button>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section hero">
+        <div class="hero-content">
+            <h2>Welcome to My Portfolio</h2>
+            <p>I'm Yash Maind, a passionate BCA student exploring web development and technology.</p>
+            <a href="#about" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="https://via.placeholder.com/300x300?text=Yash+Maind" alt="Yash Maind" class="profile-img">
+                <div class="about-text">
+                    <p>Hi, I'm Yash Maind, currently pursuing a Bachelor of Computer Applications (BCA) degree. .</p>
+                    <p>My skills include HTML, CSS, JavaScript, and building interactive applications. Interests: Full-stack development,  and open-source contributions.</p>
+                    <ul class="skills">
+                        <li>HTML & CSS</li>
+                        <li>JavaScript (Vanilla)</li>
+                        <li>Responsive Design</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section with Carousel -->
+
+</body>
+</html>
